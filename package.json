@@ -8,7 +8,9 @@
     "export": "slidev export"
   },
   "dependencies": {
+    "@iconify-json/devicon": "^1.2.62",
     "@iconify-vue/selfhst": "^1.0.9",
+    "@iconify-vue/skill-icons": "^1.0.4",
     "@slidev/cli": "^52.16.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
@@ -18,5 +20,9 @@
   },
   "devDependencies": {
     "@iconify-json/selfhst": "^1.2.10"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "esbuild@0.25.12": true
   }
 }
