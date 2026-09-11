@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@iconify-json/devicon": "^1.2.62",
+    "@iconify-vue/lucide": "^1.0.64",
     "@iconify-vue/selfhst": "^1.0.9",
     "@iconify-vue/skill-icons": "^1.0.4",
     "@slidev/cli": "^52.16.0",
