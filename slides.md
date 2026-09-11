@@ -303,6 +303,10 @@ routeAlias: Board_Wiring_Basics
 
 ::content::
 
+開發板基本分為三種腳位(pin)：
+電源用：3.3v(3V3)、5V、GND
+數位(Digital)腳位：D1~Dn
+類比(Analog)腳位：A1~An
 
 ---
 transition: slide-left
