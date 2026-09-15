@@ -35,10 +35,10 @@ titlewidth: is-2
 <h1 style="font-size: 2rem; font-weight: bold;">Arduino IDE <skill-icons-arduino/></h1>
 <h1 style="font-size: 2rem; font-weight: bold;">├─  <Link to="Arduino_IDE_Install">Arduino IDE 安裝</Link></h1>
 <h1 style="font-size: 2rem; font-weight: bold;">└─  <Link to="Arduino_IDE_Basic_Operation">Arduino IDE 基礎操作</Link></h1><br>
-<!-- <h1 style="font-size: 3rem; font-weight: bold;">實作基礎</h1>
+<h1 style="font-size: 3rem; font-weight: bold;">實作基礎</h1>
 <h1 style="font-size: 2rem; font-weight: bold;">開發板基礎</h1>
 <h1 style="font-size: 2rem; font-weight: bold;">├─  <Link to="Board_Wiring_Basics">開發板接線基礎概念</Link></h1>
-<h1 style="font-size: 2rem; font-weight: bold;">└─  <Link to="Programming_Basics_(Arduino_Syntax)">開發板程式基礎 (Arduino 語法)</Link></h1> -->
+<h1 style="font-size: 2rem; font-weight: bold;">└─  <Link to="Programming_Basics_(Arduino_Syntax)">開發板程式基礎 (Arduino 語法)</Link></h1>
 
 ---
 transition: slide-left
@@ -474,7 +474,7 @@ color: dark
   <img src="./public/arduinoide7.png" style="max-width: 20vw; max-height: 20vh; width: auto; height: auto; object-fit: contain;">
 </div>
 
-<!-- ---
+---
 transition: slide-left
 layout: top-title
 color: dark
@@ -487,10 +487,62 @@ routeAlias: Board_Wiring_Basics
 
 ::content::
 
-開發板基本分為三種腳位(pin)：
-電源用：3.3v(3V3)、5V、GND
-數位(Digital)腳位：D1~Dn
-類比(Analog)腳位：A1~An
+<h2 style="font-size: 2rem;">腳位基礎</h2>
+<h2 style="margin: 0;">開發板基本分為三種腳位(pin)：<br>
+電源用：3.3v(3V3)、5V、GND<br>
+數位 (Digital) 腳位：D0~Dn 或在 Digital 側的 0~n<br>
+類比 (Analog) 腳位：A0~An或在 Analog 側的 0~n<br>
+
+- 數位腳位的輸出輸入只會有 1 (高電位) 或 0 (低電位)
+- 類比腳位只有輸入，數值會在 0~1024
+($2^1$$^0$)
+
+</h2>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+
+<h1 style="font-size: 2.5rem; font-weight: bold;">開發板接線基礎概念</h1>
+
+::content::
+
+<h2 style="font-size: 2rem;">麵包板介紹</h2>
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 16px;">
+  <h2 style="margin: 0;">麵包板 (Bread Board)，一種方便線材插拔的免焊萬用電路板。
+  
+  A$n$~E$n$ 有接通，F$n$~J$n$ 有接通，但 A$n$~E$n$ 不與 F$n$~J$n$ 接通 ( $n \in \mathbb{Z}^+$)。
+  
+  \+ 與 - 兩排各自互通，通常用做共陰、共地或共陽用。
+  </h2>
+  <img src="./public/breadboard.jpg" style="max-width: 40vw; max-height: 30vh; width: auto; height: auto; object-fit: contain;">
+</div>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+
+<h1 style="font-size: 2.5rem; font-weight: bold;">開發板接線基礎概念</h1>
+
+::content::
+
+<h2 style="font-size: 2rem;">電阻介紹</h2>
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 16px;">
+  <h2 style="margin: 0;">電阻 (Resistor)，常見的有四環與五環電阻，使用色環組成表示該電阻電值，需要查色環表才能知道對應的電阻值。
+  </h2>
+  <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC_wOjO9BKduRgA5R6caUADa6QKtkLtHpXXKzIqZb5dL5B0O1S5pvz_4_Xtl0NHK4AvTPC5hHMfqhFzL-vkkRQMiD-3R3ryz7AW2Bq48EJEWH44LjTDr3u54su90tw_NLmwAiQ1dToHDiP/s800/teikou_4.png" style="max-width: 30vw; max-height: 20vh; width: auto; height: auto; object-fit: contain;">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0ykxo0j_guaQvRK-U6OIF6aFDQhJrfAbIFHYCn2DELA1GYOvjjuwye4gru0kBPAUwegGw_JoXKjS4uOAiIzxmqJ6of0RHFE7aXT-gHVPHffADfxzCfe6OGoyi-sv3ZfLFQFC-QhoTvXcY/s800/teikou_5.png" style="max-width: 30vw; max-height: 20vh; width: auto; height: auto; object-fit: contain;">
+</div>
+</div>
 
 ---
 transition: slide-left
@@ -503,4 +555,23 @@ routeAlias: Programming_Basics_(Arduino_Syntax)
 
 <h1 style="font-size: 2.5rem; font-weight: bold;">開發板程式基礎 (Arduino 語法)</h1>
 
-::content:: -->
+::content::
+
+<h2 style="font-size: 2rem;">腳位定義</h2>
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 16px;">
+  <h2 style="margin: 0;">
+  有分為在 pinMode 定義與函式中定義。<br>
+  由於數位 (Digital) 腳位，有輸入與輸出功能，而類比 (Analog) 腳位只有輸入，pinMode 只用在指定數位腳位模式，用法為：
+
+```cpp
+pinMode([指定腳位], [模式：輸出|輸入|輸入(上拉電阻)]);
+```
+
+函式中的腳位定義需要看函式庫的文件，以超音波感測器的 `Ultrasonic` 為例，需要將實際接到 `trig` 與 `echo` 的數位腳位分別填入第一格與第二格。
+
+```cpp
+#include <Ultrasonic.h>
+Ultrasonic ultrasonic([trig 腳位], [echo 腳位]);
+```
+  </h2>
+</div>

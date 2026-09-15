@@ -20,7 +20,8 @@
     "vue": "^3.5.33"
   },
   "devDependencies": {
-    "@iconify-json/selfhst": "^1.2.10"
+    "@iconify-json/selfhst": "^1.2.10",
+    "playwright-chromium": "^1.63.0"
   },
   "allowScripts": {
     "esbuild@0.28.1": true,
