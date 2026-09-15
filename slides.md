@@ -174,11 +174,11 @@ color: dark
 ::content::
 
 <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 16px;">
-  <h2 style="margin: 0;">Step 4：點選「好，開始吧！」讓環境自動建立</h2>
+  <h2 style="margin: 0;">Step 5：點選「好，開始吧！」讓環境自動建立</h2>
   <img src="./public/singularblockly5.png" style="max-width: 40vw; max-height: 30vh; width: auto; height: auto; object-fit: contain;">
 </div>
 <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 16px;">
-  <h2 style="margin: 0;">Step 5：於右上角選擇要使用的開發板</h2>
+  <h2 style="margin: 0;">Step 6：於右上角選擇要使用的開發板</h2>
   <img src="./public/singularblockly6.png" style="max-width: 40vw; max-height: 30vh; width: auto; height: auto; object-fit: contain;">
 </div>
 
@@ -195,11 +195,11 @@ color: dark
 ::content::
 
 <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 16px;">
-  <h2 style="margin: 0;">Step 6：可於左側尋找需要的程式方塊編寫程式</h2>
+  <h2 style="margin: 0;">Step 7：可於左側尋找需要的程式方塊編寫程式</h2>
   <img src="./public/singularblockly7.png" style="max-width: 20vw; max-height: 30vh; width: auto; height: auto; object-fit: contain;">
 </div>
 <div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 16px;">
-  <h2 style="margin: 0;">Step 7：可於右上角找到「編譯並上傳」按鈕將程式燒錄 (上傳) 至開發板 (同時開啟 Singular Blockly 與 Arduino IDE 可能導致序列埠 (COM) 衝突，使燒錄出現問題，必須選擇其一開啟)</h2>
+  <h2 style="margin: 0;">Step 8：可於右上角找到「編譯並上傳」按鈕將程式燒錄 (上傳) 至開發板 (同時開啟 Singular Blockly 與 Arduino IDE 可能導致序列埠 (COM) 衝突，使燒錄出現問題，必須選擇其一開啟)</h2>
   <img src="./public/singularblockly8.png" style="max-width: 40vw; max-height: 30vh; width: auto; height: auto; object-fit: contain;">
 </div>
 
